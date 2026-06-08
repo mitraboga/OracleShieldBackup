@@ -1,0 +1,8 @@
+logs/*
+reports/*
+docker/backups/*
+.env
+*.log
+*.tmp
+*.rman.rendered
+!.gitkeep
