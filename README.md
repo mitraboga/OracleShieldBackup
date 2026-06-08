@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ OracleShieldBackup 
+# 🛡️ OracleShieldBackup 🛢
 
 ### Production-Inspired Oracle RMAN Backup, Recovery Validation & Cloud Archival Platform
 
