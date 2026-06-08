@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ OracleShieldBackup
+# 🛡️ OracleShieldBackup 
 
 ### Production-Inspired Oracle RMAN Backup, Recovery Validation & Cloud Archival Platform
 
@@ -1047,17 +1047,17 @@ Planned enhancements include:
 ## 👤 Author
 
 <p align="center">
+  <b style="font-size:18px;">Mitra Boga</b><br/><br/>
 
-<b>Mitra Boga</b>
+  <!-- LinkedIn: true blue label + lighter-blue username block -->
+  <a href="https://www.linkedin.com/in/bogamitra/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-bogamitra-4DA3FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2" />
+  </a>
 
-<br><br>
-
-<a href="https://www.linkedin.com/in/bogamitra/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin">
-</a>
-
-<a href="https://x.com/techtraboga">
-<img src="https://img.shields.io/badge/X-Follow-black?logo=x">
-</a>
+  <!-- X: near-black label + darker-gray username block (dark-mode friendly) -->
+  <a href="https://x.com/techtraboga" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/X-@techtraboga-3A3F45?style=for-the-badge&logo=x&logoColor=white&labelColor=111418" />
+  </a>
+</p>
 
 </p>
