@@ -230,41 +230,11 @@ Protect:
 
 OracleShieldBackup follows a layered automation workflow designed around backup reliability, recovery validation, operational visibility, and cloud archival readiness.
 
-```text
-┌─────────────────────────────┐
-│      Oracle Database        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│        Oracle RMAN          │
-│  Full / Incremental / Arch  │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│      Bash Automation        │
-│  Orchestration & Control    │
-└──────────────┬──────────────┘
-               │
-     ┌─────────┼─────────┐
-     ▼         ▼         ▼
- Logs     Validation   Reports
-     │         │         │
-     └─────────┼─────────┘
-               ▼
-┌─────────────────────────────┐
-│     Retention Policies      │
-└──────────────┬──────────────┘
-               ▼
-┌─────────────────────────────┐
-│      AWS S3 Archival        │
-└──────────────┬──────────────┘
-               ▼
-┌─────────────────────────────┐
-│ Disaster Recovery Readiness │
-└─────────────────────────────┘
-```
+<p align="center">
+  <a href="assets/OracleDB Architecture Diagram.png">
+    <img src="assets/OracleDB Architecture Diagram.png" width="95%" alt="OracleSheildBackup System Architecture"/>
+  </a>
+</p>
 
 The architecture demonstrates how Oracle RMAN can be integrated with automation tooling and cloud storage to create a repeatable database protection workflow.
 
