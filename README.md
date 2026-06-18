@@ -843,14 +843,14 @@ Technology exists to solve business problems. OracleShieldBackup was designed wi
 # 📈 Recovery Strategy
 
 ```text
-┌──────────────────────┐    ┌─────────────────────────┐    ┌────────────────────┐
-│ Full Database Backup │ -> │ Incremental Backup Chain│ -> │ Archive Log Backup │
-└──────────────────────┘    └─────────────────────────┘    └──────────┬─────────┘
-                                                                      │
-                                                                      │                                         
-┌──────────────────────┐    ┌─────────────────────────┐               │
-│ Recovery Readiness   │ <- │ Validation Workflows    │ <─────────────┘
-└──────────────────────┘    └─────────────────────────┘
+┌──────────────────────┐    ┌──────────────────────────┐    ┌────────────────────┐
+│ Full Database Backup │ -> │ Incremental Backup Chain │ -> │ Archive Log Backup │
+└──────────────────────┘    └──────────────────────────┘    └──────────┬─────────┘
+                                                                       │
+                                                                       │                                         
+┌────────────────────┐    ┌──────────────────────┐                     │
+│ Recovery Readiness │ <- │ Validation Workflows │ <───────────────────┘
+└────────────────────┘    └──────────────────────┘
 ```
 
 This approach balances:
