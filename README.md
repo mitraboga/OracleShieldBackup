@@ -736,8 +736,6 @@ Contains recovery validation results and backup readiness information.
 
 # 📈 Operational Workflow Summary
 
-# 📈 Operational Workflow Summary
-
 ```text
 ┌───────────────┐    ┌─────────────────┐    ┌─────────────┐
 │ Cron Schedule │ -> │ Bash Automation │ -> │ Oracle RMAN │
