@@ -736,20 +736,24 @@ Contains recovery validation results and backup readiness information.
 
 # 📈 Operational Workflow Summary
 
+# 📈 Operational Workflow Summary
+
 ```text
-┌───────────────┐    ┌─────────────────┐    ┌─────────────┐    ┌─────────────────┐
-│ Cron Schedule │ -> │ Bash Automation │ -> │ Oracle RMAN │ -> │ Backup Creation │
-└───────────────┘    └─────────────────┘    └─────────────┘    └────────┬────────┘
-                                                                         │
-                                                                         ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ AWS S3 Archival │ <- │ Retention Mgmt  │ <- │ Logging & Meta  │ <- │ Recovery Validate│
-└────────┬────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Reporting Dash. │
-└─────────────────┘
+┌───────────────┐    ┌─────────────────┐    ┌─────────────┐
+│ Cron Schedule │ -> │ Bash Automation │ -> │ Oracle RMAN │
+└───────────────┘    └─────────────────┘    └──────┬──────┘
+                                                   │
+                                                   │
+                                                   ▼
+┌────────────────┐    ┌───────────────────┐    ┌─────────────────┐
+│ Logging & Meta │ <- │ Recovery Validate │ <- │ Backup Creation │
+└──────┬─────────┘    └───────────────────┘    └─────────────────┘
+       │
+       │
+       ▼
+┌────────────────┐    ┌─────────────────┐    ┌────────────────┐
+│ Retention Mgmt │ -> │ AWS S3 Archival │ -> │ Reporting Dash │
+└────────────────┘    └─────────────────┘    └────────────────┘
 ```
 
 ---
